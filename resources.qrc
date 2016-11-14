@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/computer.png</file>
+        <file>images/greendot.png</file>
+        <file>images/human.png</file>
+        <file>images/kitsune.png</file>
+        <file>images/kodoma.png</file>
+        <file>images/koro.png</file>
+        <file>images/plateau.png</file>
+        <file>images/samurai.png</file>
+        <file>images/tanuki.png</file>
+    </qresource>
+</RCC>

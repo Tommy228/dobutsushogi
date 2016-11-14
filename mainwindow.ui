@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>532</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="mainLayout"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>532</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Jeu</string>
+    </property>
+    <addaction name="actionNew_Game"/>
+   </widget>
+   <widget class="QMenu" name="menuArtificial_Intelligence">
+    <property name="title">
+     <string>Intelligence artificielle</string>
+    </property>
+    <addaction name="actionMake_decision"/>
+    <addaction name="actionRandom_decision"/>
+    <addaction name="actionAutoplay"/>
+    <addaction name="separator"/>
+    <addaction name="actionEvaluer"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <addaction name="menuGame"/>
+   <addaction name="menuArtificial_Intelligence"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew_Game">
+   <property name="text">
+    <string>Nouvelle partie</string>
+   </property>
+  </action>
+  <action name="actionMake_decision">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Décision intelligence</string>
+   </property>
+  </action>
+  <action name="actionAutoplay">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Autoplay</string>
+   </property>
+  </action>
+  <action name="actionEvaluate">
+   <property name="text">
+    <string>Evaluate</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>A propos</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>A propos de Qt</string>
+   </property>
+  </action>
+  <action name="actionRandom_decision">
+   <property name="text">
+    <string>Décision aléatoire</string>
+   </property>
+  </action>
+  <action name="actionEvaluer">
+   <property name="text">
+    <string>Evaluer</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
