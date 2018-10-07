@@ -194,14 +194,14 @@ void MainWindow::updateStatusBar(void)
 {
     if (!game->isGameValid())
     {
-        QString msg("Fin du jeu");
+        QString msg("End of the game");
         if (game->isOpponentWinner())
         {
-            msg += " (victoire de l'intelligence artificielle).";
+            msg += " (AI wins).";
         }
         else
         {
-            msg += " (victoire du joueur).";
+            msg += " (player winsr).";
         }
         messageLabel->setText(msg);
         progressBar->setVisible(false);
@@ -210,13 +210,13 @@ void MainWindow::updateStatusBar(void)
     {
         if (!game->isOpponentTurn())
         {
-            messageLabel->setText("En attente de la décision de l'utilisateur.");
+            messageLabel->setText("Waiting for the user to play.");
         }
         else
         {
             if (!ui->actionAutoplay->isChecked())
             {
-                messageLabel->setText("Tour de l'intelligence artificielle. Autoplay désactivé.");
+                messageLabel->setText("AI's turn. Autoplay is disabled.");
                 progressBar->setVisible(false);
             }
         }
@@ -231,7 +231,7 @@ void MainWindow::getAIProgress(int progress)
 void MainWindow::onDecisionStart(void)
 {
     progressBar->setVisible(true);
-    messageLabel->setText("En attende de l'intelligence artificielle.");
+    messageLabel->setText("Waiting for the AI.");
     progressBar->setValue(0);
     ui->actionMake_decision->setDisabled(true);
     ui->actionRandom_decision->setDisabled(true);
@@ -256,6 +256,5 @@ void MainWindow::showEvaluation(void)
         {
             str += QString::number(line.at(j)) + " ";
         }
-       // qDebug() << str;
     }
 }

@@ -31,13 +31,13 @@
    </property>
    <widget class="QMenu" name="menuGame">
     <property name="title">
-     <string>Jeu</string>
+     <string>Game</string>
     </property>
     <addaction name="actionNew_Game"/>
    </widget>
    <widget class="QMenu" name="menuArtificial_Intelligence">
     <property name="title">
-     <string>Intelligence artificielle</string>
+     <string>Artificial intelligence</string>
     </property>
     <addaction name="actionMake_decision"/>
     <addaction name="actionRandom_decision"/>
@@ -47,7 +47,7 @@
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
-     <string>Aide</string>
+     <string>Help</string>
     </property>
     <addaction name="actionAbout"/>
     <addaction name="actionAbout_Qt"/>
@@ -59,7 +59,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNew_Game">
    <property name="text">
-    <string>Nouvelle partie</string>
+    <string>New game</string>
    </property>
   </action>
   <action name="actionMake_decision">
@@ -70,7 +70,7 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>Décision intelligence</string>
+    <string>Intelligent decision</string>
    </property>
   </action>
   <action name="actionAutoplay">
@@ -91,22 +91,22 @@
   </action>
   <action name="actionAbout">
    <property name="text">
-    <string>A propos</string>
+    <string>About</string>
    </property>
   </action>
   <action name="actionAbout_Qt">
    <property name="text">
-    <string>A propos de Qt</string>
+    <string>About Qt</string>
    </property>
   </action>
   <action name="actionRandom_decision">
    <property name="text">
-    <string>Décision aléatoire</string>
+    <string>Random decision</string>
    </property>
   </action>
   <action name="actionEvaluer">
    <property name="text">
-    <string>Evaluer</string>
+    <string>Evaluate</string>
    </property>
   </action>
  </widget>
